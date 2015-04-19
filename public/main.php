@@ -1,45 +1,29 @@
-<!DOCTYPE html>
-<html>
-    
-    <body>
+<?php require_once("../includes/session.php"); ?>
+<?php require_once("../includes/connect.php"); ?>
+<?php require_once("../includes/functions.php"); ?>
+<?php include_once("../includes/templates/header.php"); ?>
 
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            Select image to upload:
-            <input type="file" name="fileToUpload" id="fileToUpload">
-            <input type="submit" value="Upload Image" name="submit">
-        </form>
-
-        <?php include_once("../public/imgdisplay.php"); ?>
+ <!--Upload form toggle view-->       
+        <script type="text/javascript">
+            $("document").ready(function () {
+            $('.logo').click(function () {
+            $(".uploadform").toggleClass("view");
+            });
+        });
+        </script>
         
-            <style type="text/css">
-                body {
-                    margin: 0 auto 20px;
-                    padding: 0;
-                    background: #f5f5f1;
-                    text-align: center;
-                }
-                td {
-                    padding: 0 0 50px;
-                    text-align: center;
-                    font: 9px sans-serif;
-                }
-                table {
-                    width: 100%;
-                }
-                img {
-                    display: block;
-                    margin: 20px auto 10px;
-                    max-width: 300px;
-                    max-height:300px;
-                    outline: none;
-                }
-                img:active {
-                    max-width: 100%;
-                }
-                a:focus {
-                    outline: none;
-                }
-            </style>
-
-    </body>
-</html>
+   <!--Main page container block-->     
+        <div class="pagecontainer container col-md-12">
+        	<?php echo message(); ?>
+        	<div class="row" id="pictures"></div>
+        		<div class="col"></div>
+    <!-- Main info panel-->
+    <div class="info">
+    <p>Welcome to Easel, a website where artists from everywhere can share and view each others work with a simple and easy interface.</p>
+    </div>
+        
+ <!--Include php from image gallery-->   
+        	<?php include_once("../public/imgdisplay.php"); ?>
+ <!--end page container-->
+ <!--footer include-->       
+        <?php include_once("/home/oboon/public_html/Easel/includes/templates/footer.php"); ?>
