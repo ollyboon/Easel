@@ -130,17 +130,20 @@ video {
 	padding:0 0 20px 20px;
 }
 h3{
-	font: 48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	font-weight:normal; 
+	font: 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: normal;
 	color: #7fddd5; 
 	text-shadow:1px 1px 0 #ada89a;
-	padding:35px 20px 0 0px;
-	margin-left:-25px;
+	padding: 10px;
 }
+
+h4{
+	color: white;
+}
+
 p {
 	font: 13px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	font-style:italic;
-	padding:10px 0 10px 0;
+	padding: 10px;
 	text-shadow:1px 1px 0 #ebebeb;
 }
 
@@ -192,9 +195,10 @@ ul li.tall span {left:210px; top:-6px;}
 
 .info{
 	width: 300px;
-	height: 350px;
+	height: 200px;
 	background-color: #7fddd5;
 	float: right;
 	position: fixed;
 	right: 0;
+	opacity: 0.75;
 }

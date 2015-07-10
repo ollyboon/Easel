@@ -20,8 +20,8 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>        
-                <img class="logo" src="/home/oboon/public_html/Easel/public/uploads/Easel.png"/>
-                <button  href="about.html"type="button" class="btn btn-info" value="About" name="about">About</button>
+                <a href="main.php"><img class="logo" src="/home/oboon/public_html/Easel/public/uploads/Easel.png"/></a>
+                <a href="about.php"><button "type="button" class="btn btn-info" value="About" name="about">About</button></a>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
               <!-- if not logged in display sign in form in nav bar-->
